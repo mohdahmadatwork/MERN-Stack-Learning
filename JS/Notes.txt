@@ -1,0 +1,86 @@
+Source {
+    -- Book: Speaking With JavaScript
+    -- Web: Mdn Reference
+}
+Class 1{
+    --JS Facts{
+        --Js is a Scripting language
+        --Scripting is small or light weight
+        --JS is functional based programming language
+        --Brenden Eich Built js in 10 days
+        --Firstly called js as livescript
+        --From 1995 livescript called as JavaScript
+        --Official name of js today is ECMAScript
+        --Every Browser has there JS engine which compile and run the JS on browser
+        --Because every browser have different so js can behave differently in every device
+        --JavaScript Borrowed from Scheme(General Purpose programming language), AWK(First Class Function),Self(Prot)
+        --JS is loosely type lang
+    } 
+    --Data Type{
+        --primitive data type {
+            -1-number{
+                --int,float,short,long all are numbers
+                --this data type can contain 64 bit number
+                --Success Value (0 to 9 , Decimal number)
+                --Failure Value (Infinity , NaN) (number/0)
+                --NaN (Not a Number)
+                --number + string = string
+                --number - string = Number
+                --number + boolean = number
+                --number + undefined = NaN
+                --number + infinity = infinity
+                --string interpolation (use ${a} inside string to dynamically render a inside string)
+            }
+            -2-bigint{
+                --20000n is a bigint number 
+                --bigint can be operated with bigint only
+            }
+            -3-string
+            -4-boolean {
+                --number + boolean = number
+            }
+            -5-null {
+                --it is a Value
+                --if address is not present the value is assigned null to an object only because object contains reference
+                --typeof undefined (undefined)
+                --typeof null (object) 
+                --null == undefined (true , But == is a loose compairison , "==" it first convert easy prey to different thenn compare)
+                --null === undefined (false, === is a strict compairision , First check the type then compare the value)
+            }
+            -6-symbol{
+                --return unique
+            }
+            -7-undefined
+        }
+        --Referal Data Type {
+            --Reference values that refer to objects.
+            --JS engine allocate memory in Heap for this type of Data
+            --Array {
+                -- arr = [10,20,20];
+                -- arr contains the reference of array [10,20,20]
+            }
+        }
+    }
+    --Type Cast{
+        --parseInt()
+        --parseFloat()
+    }
+    --Loose Compairision(==){
+        -- First convert 
+        -- then compare the value
+        -- example {
+            --10 == "10"  
+            --return true 
+            --because first == it convert to 10 (number) to string then compare with "10" (string)
+        }  
+    }
+    --Strict Comparision (===){
+        -- First type check 
+        -- then compare the value
+        -- example {
+            --10 == "10"  
+            --return false 
+            --because first === it checks the type of 10 that is number  and "10" that is string so it type checks and get different so it exits without checking value and gives false
+        }
+    }
+}
