@@ -2,11 +2,12 @@ Source {
     -- Book: Speaking With JavaScript
     -- Web: Mdn Reference
 }
-Class 1{
+Class 1 (05/03/2023) {
     --JS Facts{
         --Js is a Scripting language
         --Scripting is small or light weight
         --JS is functional based programming language
+        --JS is loosely type lang
         --Brenden Eich Built js in 10 days
         --Firstly called js as livescript
         --From 1995 livescript called as JavaScript
@@ -14,10 +15,9 @@ Class 1{
         --Every Browser has there JS engine which compile and run the JS on browser
         --Because every browser have different so js can behave differently in every device
         --JavaScript Borrowed from Scheme(General Purpose programming language), AWK(First Class Function),Self(Prot)
-        --JS is loosely type lang
     } 
     --Data Type{
-        --primitive data type {
+        --primitive / primary / Immutable / value data type {
             -1-number{
                 --int,float,short,long all are numbers
                 --this data type can contain 64 bit number
@@ -29,13 +29,14 @@ Class 1{
                 --number + boolean = number
                 --number + undefined = NaN
                 --number + infinity = infinity
-                --string interpolation (use ${a} inside string to dynamically render a inside string)
             }
             -2-bigint{
                 --20000n is a bigint number 
                 --bigint can be operated with bigint only
             }
-            -3-string
+            -3-string{
+                --string interpolation (use ${a} inside string to dynamically render a inside string)
+            }
             -4-boolean {
                 --number + boolean = number
             }
@@ -52,12 +53,46 @@ Class 1{
             }
             -7-undefined
         }
-        --Referal Data Type {
+        --Non-Primitive / Secondary / Mutable / Referal Data Type {
             --Reference values that refer to objects.
             --JS engine allocate memory in Heap for this type of Data
             --Array {
                 -- arr = [10,20,20];
                 -- arr contains the reference of array [10,20,20]
+                -- Array is indexible {
+                    --pros {
+                        --Can contain data in cotinuous manner
+                    }
+                    --cons {
+                        --Humans are bad with remembering numbers
+                    }
+                }
+            }
+            --Object {
+                --var o = {};
+                --typeof o ; //object 
+                --object is key value pair 
+                --We can find the value through the key
+                --We can access value through two syntax with square( [] ) bracket and Dot(.) operator {
+                    var  temp = {delhi:11,hyd:12}
+                    temp.delhi; // 11
+                    temp["delhi"];
+                    temp.hyd; // 12
+                    temp["delhi"];
+                }
+                --difference b/w Dot( . ) operator and square ( [] ) operator {
+                    --you can not access those key which are number or string containing special char like space
+                    --through square bracket you can only access string keys which have no spaces
+                    --example{
+                        var ahmad = {name:"Mohd Ahmad",study:"Btech",12:65,"perm add":"Delhi"};
+                        console.log (ahmad.name);
+                        console.log(ahmad[name]);
+                        console.log(ahmad.12);
+                        console.log(ahmad[12]);
+                        console.log(ahmad.perm add);
+                        console.log(ahmad["perm add"]);
+                    }
+                }
             }
         }
     }
@@ -65,7 +100,7 @@ Class 1{
         --parseInt()
         --parseFloat()
     }
-    --Loose Compairision(==){
+    --Loose Comparison(==){
         -- First convert 
         -- then compare the value
         -- example {
@@ -74,13 +109,71 @@ Class 1{
             --because first == it convert to 10 (number) to string then compare with "10" (string)
         }  
     }
-    --Strict Comparision (===){
+    --Strict Comparison (===){
         -- First type check 
         -- then compare the value
         -- example {
             --10 == "10"  
             --return false 
             --because first === it checks the type of 10 that is number  and "10" that is string so it type checks and get different so it exits without checking value and gives false
+        }
+    }
+}
+
+Class 2 (06/03/2023) {
+    --Recap {
+        --Dynamic 
+    }
+    --Immutability{
+        --original never change
+        --if you change in copy no chanages in original value
+        --primitive data types are immutable
+        --example {
+            var a = 10;
+            var b = a;
+            console.log(b);
+            console.log(a);
+            b++;
+            console.log(b);
+            console.log(a);
+        }
+        --Referance data type are mutable 
+        --example {
+            var arr = [1,2,3];
+            var arr2 = arr;
+            console.log(arr==arr2);//true
+            console.log(arr===arr2);//true
+            arr2[0]=10;
+            console.log(arr);
+            console.log(arr2);
+        }
+        --for making Referance data type immutable we can clone the object in a new memory
+        --example{
+            var arr3 = [...arr]; // "..." is called spread operator
+            arr2[0]=10;
+            console.log(arr);
+            console.log(arr2);
+            arr3[0]=100;
+            console.log(arr3);
+            console.log(arr==arr3);//false
+            console.log(arr===arr3);//false
+        }
+        --primitive are not object, they have pure values. It doesn't attacch any methods.
+        --Due to wrapper objects. you can access methods through premitive data types because primitive data type change to wrapper objects then call methods then it become normal.
+    }
+    --Loop vs Iterator{
+        --Loop{
+            --When iterator is known
+            --for(var i=0;i<arr.length;i++);
+        }
+        --Iterator{
+            --When we don't know the number of iteration we use iterator 
+            --for(var element of arr){ // Traverse arr this is a for of loop can not iterate over object
+                console.log(arr[i]);
+            } 
+            --for (let key in ahmad){ //traverse object this is a for in loop used to traverse over key value pair so it can also iterate over array where key is index
+                console.log(key,ahmad[key])
+            }
         }
     }
 }
