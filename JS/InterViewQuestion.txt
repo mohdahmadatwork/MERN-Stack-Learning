@@ -1,0 +1,5 @@
+1. Mutability vs Immutability ?
+2. Can you null any type of variable ? if you can what are the casualities?
+3. does null and udefined are same ? 
+4. 10 == "10" gives true does they are same ? 
+5. Strict VS Loose compairision ?
