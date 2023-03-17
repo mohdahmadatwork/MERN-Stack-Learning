@@ -3,3 +3,4 @@
 3. does null and udefined are same ? 
 4. 10 == "10" gives true does they are same ? 
 5. Strict VS Loose compairision ?
+6. Block level Scope VS Functional Level Scope.

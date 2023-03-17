@@ -191,3 +191,67 @@ Class 3 (11/03/2023){
     --10 == "10" gives true does they are same ?
     --
 }
+
+Class 4 (12/03/2023){
+    --VM {
+        --VM: Virtual Machine
+        --JavaScript is a compiled as well as Interpreted language
+        --JS do in Memory Compilation while others do in disk compilation
+        --VM interpret the compile code 
+        --To see this {
+            example {
+                disp();
+                function disp(){
+                    console.log("I am the Disp");
+                }
+                //This code works because of function Hoisting
+            }
+            example{
+                function output(){
+                    console.log("I is ",i);
+                    for(var i =1;i<=10;i++){
+                        console.log("I is ",i);
+                    }
+                    console.log("I is ",i);
+                }
+                this function works because of Variable Hoisting
+            }
+            --Hoisting (After compilation the function desc goes to top and calling comes after that so the code works)
+        }
+    }
+    --Hoisting{
+        --After compilation the function desc or variable declarartion goes to top and calling or initialization comes after that so the code works this is called hoisting
+        --If you write var in function it will going to be Functional Hoisting if if you erite var outside function it will be global Hoisting
+    }
+    --TDZ {
+        --Tempral Dead Zone
+    }
+    --accidental global variable{
+        --name = "mohd ahmad"; (accidental global variable)
+        --'use strict' (used to tell js that don't use accidental global variable)
+    }
+    --var{
+        --var looks like var can define more than once but actually because of Hoisting var defines once in the function others are just assignment 
+    }
+    --let{
+        --It do the Block Level Hoist
+        --It do the hoisting but it can not access before initialization when it initialized  the above zone or zone before initialization is called TDZ.
+        --You can write let a and every time it will actually initialize a but when you write var a yhen because of hoisting the declaration will go to the top of the function so that everytime you write var a = 10; it will not declare a again instead the new value will assign to a.
+        --Previous value of let a will be intact after the scope of second declaration of a while in var if you write var a again you will loose the previous value.  
+    }
+    --window{
+        --Window is the main or global object 
+        --Every Global variable attach with window object
+        --window == this // true
+        -- var i = "Mohd Ahmad";
+        -- we can access i also like this window.i;
+    }
+    --functions{
+        --when function returns nothing it returns undefined
+        --syntax{
+            function show(){
+                //body
+            }
+        }
+    }
+}
