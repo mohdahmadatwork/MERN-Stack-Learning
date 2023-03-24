@@ -4,3 +4,6 @@
 4. 10 == "10" gives true does they are same ? 
 5. Strict VS Loose compairision ?
 6. Block level Scope VS Functional Level Scope.
+7. difference between return and break?
+8. When to use unnamed function?
+9. Do Anonymous function support Hoisting?

@@ -1,6 +1,8 @@
 Source {
     -- Book: Speaking With JavaScript
     -- Web: Mdn Reference
+    --JS conference
+    --Facebook conference
 }
 Class 1 (05/03/2023) {
     --JS Facts{
@@ -251,6 +253,71 @@ Class 4 (12/03/2023){
         --syntax{
             function show(){
                 //body
+            }
+        }
+    }
+}
+
+Class 6 (19/03/2023){
+    --base 64 images
+    --Open Close Principle
+    --Functional programming{
+        --Facts{
+            --programming paradigm
+            --based on declarative programming rather than imperative
+            --purely functions based
+        }
+         --functions disp(t,y){
+                var a =10;
+                a = a + t +y;
+                console.log("Ahmad");
+                return "hello "+a;
+        }
+        --Drawback{
+            --when we define named function it becomes global and attached with window object
+        }
+        --Function {
+            --named function{
+                syntax {
+                    --functions disp(){
+                        console.log("Ahmad");
+                        return hello;
+                    }
+                }
+            }
+            --unnamed function/Anonymous/Function Expression{
+                --When we use event handelling we use unnamed function
+                --example{
+                    var add = fcunction(){
+                        //Function Body
+                    }
+                }
+                --example{
+                    function calc(){
+                        var add = function(x,y){
+                            return x+y;
+                        }
+                        var subtract = function(x,y){
+                            return x-y;
+                        }
+                        //return add,subtract; only last element will going to return;
+                        //return [add,subtract]; 
+                        return {"addition":add,"subtraction":subtract};
+                    }
+                }
+            }
+            --Named Function Expression(NFE){
+                function calc(){
+                        var add = function add(x,y){
+                            return x+y;
+                        }
+                        var subtract = function sub(x,y){
+                            return x-y;
+                        }
+                        //return add,subtract; only last element will going to return;
+                        return [add,subtract]; 
+                        //return {"addition":add,"subtraction":subtract};
+                    }
             }
         }
     }
