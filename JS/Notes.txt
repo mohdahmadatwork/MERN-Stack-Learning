@@ -320,5 +320,66 @@ Class 6 (19/03/2023){
                     }
             }
         }
+        --Function Nested
+        --Global Function
+        --Scoping in Function
+        --Hoisting
+        --Function Return Function
+    }
+}
+
+Class 7 (26/03/2023){
+    --lambda Expression
+    --Function{
+        --Arrow Function{
+            --Best for one line function
+            --syntax{
+                const add = ()=>{
+                    //function body
+                }
+            }
+            --Why to use Arrow Function{
+                --shoes.find((shoe)=>shoe.price==1200); // Gives only first result
+                --the arrow function is the logic of comparision we are telling the find function what to compare
+                --find know how to compare but don't know what to compare which we give them as a arrow function
+                --shoes.filter((shoe)=>shoe.price>=1200); //return a new sub array if there is no matching thing it will return empty array
+                --arr.push();
+                --arr.pop();
+                --arr.shift();
+                --arr.unshift();
+                --arr.splice(); //delete,replace, as well as insert at perticular index
+                --arr = arr.filetr(e=>e<50); //Delete multiple records
+                --newArr = arr.filter(e=>true); //copy the array without spread operator
+                --arr.findIndex(e=>e<50); 
+                --arr.forEach(e=>console.log(e)); //forEachreturns nothing it just run the loop over array
+                --arr.map(e=>e**3); //map returns array while filter return sub array
+                --arr.sort((a,b)=>a-b); //if our function return + then it will swap other wise not
+                --arr.reduce((acc,ele)=>acc+ele);
+            }
+            --HOF (Higher order function){
+
+            }
+            --Array Functions{
+                .find(){
+                    --if found return object or value
+                    --if not found return 
+                }
+                .findIndex()
+                .filter()
+                .forEach()
+                .map()
+            }
+        }
+    }
+}
+
+Class 8 (01/01/2023){
+    
+}
+Class 9 (02/01/2023){
+    --Binding{
+        --Default Binding
+        --Implicit Binding
+        --Explicit Binding
     }
 }

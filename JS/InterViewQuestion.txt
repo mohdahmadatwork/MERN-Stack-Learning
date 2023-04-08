@@ -7,3 +7,8 @@
 7. difference between return and break?
 8. When to use unnamed function?
 9. Do Anonymous function support Hoisting?
+10. Tell about array function?
+11. do the cloning of array without using spread operator?
+12. difference between map and filter?
+13. higher order function ?
+14. How many types of binding?

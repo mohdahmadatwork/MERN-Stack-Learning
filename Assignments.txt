@@ -1,0 +1,3 @@
+Q.1 {
+    --statement : Build a Shopping system where we have 10 products, products are objects, projects can have id,name,price,brand. products can be arranges by name or price or brand(in asc and desc). you need to show total price of all products. product can be searched by name and price.search result can be 0 to N. New product can be add in middle, end,beg. Any existig product can be deleted by name aor price. Can be delete single or multiple product. Every product has 10%tax it need to be show during printing so the final price of product can be  priced + tax. Show the highest and lowest price product. Show the sum of all products whose price is greater then 2000
+}
